@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+html * {
+    box-sizing: border-box !important;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #888;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", "Times New Roman", Times, Baskerville, Georgia, serif;
+    display: block;
+    margin: 0;
+}
+
+.card {
+    vertical-align: top;
+    background-color: #eeeeee;
+    margin: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.75;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
+}
+
+.card .inner {
+    padding: 1rem;
+}
+
+.card .hero_image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.page {
+    display: block;
+    max-width: 660px;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 1rem;
+    line-height: 1.5;
+    background-color: #eee;
+}
+
+.hero {
+    background-image: url(http://www.scrummable.com/wp-content/themes/scrummable-2016-theme/img/scrummable-hero-full.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    background: linear-gradient(#000, rgba(0, 0, 0, 0));
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+main {
+    font-size: 0;
+    /* zero font-sie for inline-block wrapping */
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 18px;
+    }
+    .card {
+        display: block;
+        width: calc(100% - 1rem);
+    }
+    main {
+        width: 100%;
+    }
+    .hero {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+    html {
+        font-size: 16px;
+    }
+    .card {
+        display: block;
+        width: calc(100% - 1rem);
+    }
+    main {
+        display: inline-block;
+        width: 66.66%;
+    }
+    .hero {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 33.33%;
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    html {
+        font-size: 16px;
+    }
+    .card {
+        display: inline-block;
+        width: calc(50% - 1rem);
+    }
+    main {
+        display: inline-block;
+        width: 66.66%;
+    }
+    .hero {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 33.33%;
+        height: 100vh;
+    }
+}
+
+.button {
+    display: block;
+    padding: 1rem;
+    background: #444;
+    color: #eee;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background: #244;
+}
+
+a {
+    color: #244;
+    text-decoration: none;
+    box-shadow: inset 0 -2px 0 #244;
+    padding-bottom: 4px;
+}
+
+a:hover {
+    box-shadow: inset 0 -4px 0 #244;
+}
+
+.hero h1 {
+    line-height: 2;
+}
+
+.hero h1 a {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 0 #244;
+    padding-bottom: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {}
+
+nav a {
+    display: block;
+    box-shadow: 0 0 0 #444;
+    color: #ddd;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    box-shadow: 0 0 0 #444;
+    color: #fff;
+}
+
+blockquote {
+    box-shadow: inset 4px 0 #344;
+    margin: 0;
+    padding: 1rem;
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.wp-caption, .wp-caption img, [class*="wp-image"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 1rem auto;
+}
+
+.wp-caption-text {
+    font-size: 0.8rem;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background: #ccc;
+    color: #222;
+    margin: 0;
+    position: relative;
+}
+
+.wp-caption-text:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -2rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 2rem 2rem 2rem;
+    border-color: transparent transparent #ccc transparent;
+    transform: translateX(-50%);
+}

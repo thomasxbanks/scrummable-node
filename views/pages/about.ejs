@@ -1,0 +1,15 @@
+<%- contentFor('hero') %>
+    <section class="hero">
+<%- contentFor('body') %>
+    <% for (user of users) { %>
+      <article class="card">
+        <img class="hero_image" src="<%= user.avatar %>" />
+        <div class="inner">
+          <h2><%- user.name %></h2>
+          <%- user.bio %>
+        </div>
+      </article>
+    <% } %>
+<p>
+  <small>Please note: we are not cats, we are just too shy to use actual photos. Or names.</small>
+</p>

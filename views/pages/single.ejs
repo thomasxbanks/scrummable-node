@@ -1,0 +1,10 @@
+<%- contentFor('hero') %>
+    <section class="hero" style="background-image: url(<%= post.better_featured_image.source_url %>)">
+
+    <%- contentFor('body') %>
+        <article class="page">
+            <div class="inner">
+                <h2><%- post.title.rendered %></h2>
+                <%- post.content.rendered %>
+            </div>
+        </article>

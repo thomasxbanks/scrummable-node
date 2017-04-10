@@ -1,0 +1,14 @@
+<%- contentFor('hero') %>
+    <section class="hero">
+
+    <%- contentFor('body') %>
+        <% for (post of posts) { %>
+            <article class="card">
+                <img class="hero_image" src="<%= post.better_featured_image.source_url %>" />
+                <div class="inner">
+                    <h2><%- post.title.rendered %></h2>
+                    <%- post.excerpt.rendered %>
+                    <a href="/post/<%- post.slug %>" class="button">Read more</a>
+                </div>
+            </article>
+            <% } %>

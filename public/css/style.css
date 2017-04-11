@@ -108,7 +108,7 @@ main {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) and (max-width: 1599px) {
     html {
         font-size: 16px;
     }
@@ -125,6 +125,27 @@ main {
         right: 0;
         top: 0;
         width: 33.33%;
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 16px;
+    }
+    .card {
+        display: inline-block;
+        width: calc(33.33% - 1rem);
+    }
+    main {
+        display: inline-block;
+        width: 75%;
+    }
+    .hero {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 25%;
         height: 100vh;
     }
 }
